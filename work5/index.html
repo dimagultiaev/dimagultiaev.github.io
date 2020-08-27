@@ -1,0 +1,388 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>Реальный рейтинг кредитов и онлайн займов - moneyhere.ru </title>
+    <meta name="description" content="Получи займ, кредит онлайн мгновенно на карту, на счет, наличными, по системе Контакт, на Киви или Яндекс деньги. Вероятность одобрения микрозайма 97%! Выдача за 3 минуты, достаточно только паспорта, без проверки и кредитной истории.">
+    <meta name="keywords" content="онлайн займы, кредит наличными, кредитные карты, карты рассрочки, кредиты, займ на карту, рейтинг займов, рейтинг кредитов, топ займов, топ кредитов">
+
+    <link href="/designs/13/scss/style.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <script src="/designs/13/js/vue.min.js"></script>
+    <script src="https://moneyhere.ru/js/plugins/axios/axios.min.js"></script>
+            <script src="https://my.saleads.pro/api/scid.js?auth=uPpwWHxWWE5iZoZwGjewVgVgO6rqg7rONPA2iVA10xFX2ufnlf"></script>
+       
+</head>
+<body>
+
+<div id="elements" class="wrapper">
+
+    <!--main-->
+    <main>
+        <!--        section-home-->
+        <section class="section section-home">
+            <!--header-->
+            <header class="header">
+                <div class="container">
+
+                    <div class="header-logo">
+                        <a href="" class="logo">
+                            moneyhere.ru
+                        </a>
+                        <div class="header-logo__favorites">
+                          
+                            <img src="/designs/13/image/icons/heart-white.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header-location">
+                        <!-- <input type="text" placeholder="Регион:" /> -->
+                        <!-- <input type="text" placeholder="Город:" /> -->
+                    </div>
+                    <div class="header-counter">
+                        <p>Уже одобрено заявок:</p>
+                        <span class="counter">593325</span>
+                    </div>
+
+                </div>
+            </header>
+            <div class="section-home__item">
+                <div class="container">
+
+                    <div class="section-home__item_text">
+                        <h1>Реальный рейтинг кредитов и онлайн займов</h1>
+                        <!--                advantages-->
+                        <div class="advantages">
+                            <div class="advantages-item">
+                                <div class="advantages-item__icon">
+                                    <img src="/designs/13/image/advantages/1.svg" alt="">
+                                </div>
+                                <p>Выберите банк (несколько банков)
+                                    и подайте заявку на кредит</p>
+                            </div>
+<!--                             <div class="advantages-item">
+                                <div class="advantages-item__icon">
+                                    <img src="/designs/13/image/advantages/2.svg" alt="">
+                                </div>
+                                <p>Выберите регион и город
+                                    своего местонахождения</p>
+                            </div>
+ -->                            <div class="advantages-item">
+                                <div class="advantages-item__icon">
+                                    <img src="/designs/13/image/advantages/3.svg" alt="">
+                                </div>
+                                <p>Получите решение банка
+                                    за 30 минут</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-home__item_img">
+                        <img src="/designs/13/image/home.png" alt="">
+                        <div class="section-home__item_img_cloud">
+                            Заполни минимум 3
+                            заявки сейчас и получи
+                            деньги через 15 минут
+                            <!-- деньги в {{ time15min() }} -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <h3 class="text-align-center">
+                    Топ-компании
+                    <span>Рекомендуем заполнить минимум 3 заявки</span>
+                </h3>
+                <div class="column catalog">
+                    <div v-for="(item, index) in elements" :key="item.id" class="column-item catalog-item">
+                        <div class="catalog-item__block">
+                            <div class="catalog-item__logo">
+                                <img src="logo/alfa.png" alt="">
+                            </div>
+                            <div class="stars" v-if="item.rating">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="catalog-item__block">
+                            <ul class="catalog-item__list">
+                                <li>
+                                    <div class="catalog-item__list_icon">
+                                        <img src="/designs/13/image/icons/card.svg" alt="">
+                                    </div>
+                                    <p>До <b>500000</b> руб.</p>
+                                </li>
+                                <li>
+                                    <div class="catalog-item__list_icon">
+                                        <img src="/designs/13/image/icons/percent.svg" alt="">
+                                    </div>
+                                    <p>Ставка <b>11.99%</b> в год</p>
+                                </li>
+                            </ul>
+                            <div class="catalog-item__count">Возраст от <b>18</b> до <b>90</b> лет</div>
+                            <a target="_blank" href="https://readserv.com/go/f5ae11f70d01426ba0eee42428aa9b3e365b64d1eb0a0b0b/" class="btn">Получить карту</a>
+                        </div>
+                    </div>
+                    <div v-for="(item, index) in elements" :key="item.id" class="column-item catalog-item">
+                        <div class="catalog-item__block">
+                            <div class="catalog-item__logo">
+                                <img src="logo/tinkoff.png" alt="">
+                            </div>
+                            <div class="stars" v-if="item.rating">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="catalog-item__block">
+                            <ul class="catalog-item__list">
+                                <li>
+                                    <div class="catalog-item__list_icon">
+                                        <img src="/designs/13/image/icons/card.svg" alt="">
+                                    </div>
+                                    <p>До <b>700000</b> руб.</p>
+                                </li>
+                                <li>
+                                    <div class="catalog-item__list_icon">
+                                        <img src="/designs/13/image/icons/percent.svg" alt="">
+                                    </div>
+                                    <p>Ставка <b>от 12%</b> в год</p>
+                                </li>
+                            </ul>
+                            <div class="catalog-item__count">Возраст от <b>18</b> до <b>70</b> лет</div>
+                            <a target="_blank" href="https://readserv.com/go/f5ae11f70505426ba0eee42428aa9b3e365b64d1eb0a0b0b/" class="btn">Получить карту</a>
+                        </div>
+                    </div>
+                    <div v-for="(item, index) in elements" :key="item.id" class="column-item catalog-item">
+                        <div class="catalog-item__block">
+                            <div class="catalog-item__logo">
+                                <img src="logo/tinkoff.png" alt="">
+                            </div>
+                            <div class="stars" v-if="item.rating">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="catalog-item__block">
+                            <ul class="catalog-item__list">
+                                <li>
+                                    <div class="catalog-item__list_icon">
+                                        <img src="/designs/13/image/icons/card.svg" alt="">
+                                    </div>
+                                    <p>До <b>700000</b> руб.</p>
+                                </li>
+                                <li>
+                                    <div class="catalog-item__list_icon">
+                                        <img src="/designs/13/image/icons/percent.svg" alt="">
+                                    </div>
+                                    <p>Ставка <b>от 15%</b> в год</p>
+                                </li>
+                            </ul>
+                            <div class="catalog-item__count">Возраст от <b>18</b> до <b>90</b> лет</div>
+                            <a target="_blank" href="https://readserv.com/go/f5ae11f7701b426ba0eee42428aa9b3e365b64d1eb0a0b0b/" class="btn">Получить карту</a>
+                        </div>
+                    </div>
+                    <div v-for="(item, index) in elements" :key="item.id" class="column-item catalog-item">
+                        <div class="catalog-item__block">
+                            <div class="catalog-item__logo">
+                                <img src="logo/mts.gif" alt="">
+                            </div>
+                            <div class="stars" v-if="item.rating">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="catalog-item__block">
+                            <ul class="catalog-item__list">
+                                <li>
+                                    <div class="catalog-item__list_icon">
+                                        <img src="/designs/13/image/icons/card.svg" alt="">
+                                    </div>
+                                    <p>До <b>299999</b> руб.</p>
+                                </li>
+                                <li>
+                                    <div class="catalog-item__list_icon">
+                                        <img src="/designs/13/image/icons/percent.svg" alt="">
+                                    </div>
+                                    <p>Ставка <b>от 11.99%</b> в год</p>
+                                </li>
+                            </ul>
+                            <div class="catalog-item__count">Возраст от <b>18</b> до <b>90</b> лет</div>
+                            <a target="_blank" href="https://winslinks.com/go/f5ae11f7cd1a426ba0eee42428aa9b3e365b64d1eb0a0b0b/" class="btn">Получить карту</a>
+                        </div>
+                    </div>
+                </div>
+<!-- 
+                <div class="text-align-center">
+                    <a href="" class="btn">Показать еще</a>
+                </div>
+ -->
+            </div>
+        </section>
+
+        <!--        information-->
+        <section class="section section-gray">
+            <div class="container">
+
+                <h3>Информация о кредиторах, представленных на сайте</h3>
+                <div class="information">
+                    <div v-for="item in elements" class="information-item">
+                        <h6>Альфа Банк кредитная карта</h6>
+                        <p>ПАО Альфа-Банк; ОГРН 1027700067328. Лицензия № 1326. Адрес: 107078, г. Москва, Каланчевская ул. 27</p>
+                    </div>
+                    <div v-for="item in elements" class="information-item">
+                        <h6>Альфа Банк кредитная карта</h6>
+                        <p>ПАО Альфа-Банк; ОГРН 1027700067328. Лицензия № 1326. Адрес: 107078, г. Москва, Каланчевская ул. 27</p>
+                    </div>
+                    <div v-for="item in elements" class="information-item">
+                        <h6>Альфа Банк кредитная карта</h6>
+                        <p>ПАО Альфа-Банк; ОГРН 1027700067328. Лицензия № 1326. Адрес: 107078, г. Москва, Каланчевская ул. 27</p>
+                    </div>
+                    <div v-for="item in elements" class="information-item">
+                        <h6>Альфа Банк кредитная карта</h6>
+                        <p>ПАО Альфа-Банк; ОГРН 1027700067328. Лицензия № 1326. Адрес: 107078, г. Москва, Каланчевская ул. 27</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="container">
+                <h6> moneyhere.ru</h6>
+                <div class="text">
+                    <p>- это бесплатный информационный сервис, предоставляющий  контент и справочную информацию о кредитных картах, кредитах, автокредитах, ипотечных и прочих займах и кредитах. Используя его вы сможете быстро решить свои финансовые вопросы, затратив минимум своего личного времени.</p>
+                    <p> moneyhere.ru не является кредитором или ипотечным/кредитным брокером и не предоставляет финансовые услуги прямо или косвенно через представителей или агентов. moneyhere.ru не осуществляет выдачу каких-либо видов кредита. moneyhere.ru не несет ответственности за точность информации, предоставленной банками по тарифам, кредитным ставкам, переплатам, а также за любую другую информацию. В оценке и сравнении кредитных и иных финансовых продуктов участвуют банки, иные кредитные (финансовые) учреждения – участники партнерской программы moneyhere.ru Участие в партнерской программе не влияет на объективность и независимость нашей оценки и сравнение кредитных и иных финансовых продуктов, которые осуществляются в соответствии с методикой moneyhere.ru</p>
+                      <p>Все товарные знаки и логотипы, представленные на этом сайте, являются собственностью соответствующих владельцев и взяты из публичных источников. Их появление на этом сайте не подразумевает одобрение ими нашего продукта.</p>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-item">
+            <div class="container">
+
+                <div class="footer-item__column">
+                    <h6>  </h6>
+                    <div class="text">
+                        <p>   </p>
+                    </div>
+                </div>
+                <div class="footer-item__column">
+                    <a href="" class="logo">moneyhere.ru</a>
+                    <div class="text">
+                        <p> © 2013 — 2020 Все права защищены</p>
+                    </div>
+                    
+                </div>
+             
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+    String.prototype.replaceAll = function(search, replacement) {
+        var target = this;
+        return target.split(search).join(replacement);
+    };
+    var app = new Vue({
+        el: '#elements',
+        data: {
+            type: 'loan',
+            elements: [],
+            counter: 100,
+            markNaked: window.location.pathname != '/' ?
+                (window.location.pathname.match(/^\/[0-9a-zA-Z]+$/) ?
+                    window.location.pathname.replace(/[^0-9a-zA-Z]+/, '') :
+                    '') : '',
+        },
+        methods: {
+            loadMore: function() {
+                this.counter = this.counter + 4;
+            },
+            link: function(val) {
+                return 'https://my.saleads.pro/s/' + val;
+            },
+            mark: function() {
+                return window.location.pathname != '/' ?
+                    (window.location.pathname.match(/^\/[0-9a-zA-Z]+$/) ?
+                        '?mark=' + window.location.pathname.replace(/[^0-9a-zA-Z]+/, '') :
+                        '') :
+                    '';
+
+            },
+            time15min: function(){
+                var now = new Date((new Date()).getTime() + 15*60000);
+                return now.getHours() + ':' + now.getMinutes();
+            },
+            logo: function(val) {
+                return '/img/logos/144x60/' + val + '.png';
+            },
+        },
+        mounted: function() {
+                        if(typeof sclid != "undefined"){
+                let markNaked = window.location.pathname != '/'
+                    ? (window.location.pathname.match(/^\/[0-9a-zA-Z]+$/)
+                        ? window.location.pathname.replace(/[^0-9a-zA-Z]+/, '')
+                        : '')
+                    : '';
+                let url = 'https://moneyhere.ru/%/offers'.replace('%', markNaked);
+                console.log([url, markNaked]);
+                let params = {clid: sclid};
+                axios.get(url, {params: params}).then( (response) => {
+                    this.elements = response.data;
+                                            ym(57237952, "params", {
+                            design: "13",
+                            companies: this.elements.map( item => item.companyName ),
+                            numOffers: this.elements.length,
+                            offerPositions: this.elements.map( (item, index) => {
+                                let off = {} 
+                                off[item.companyName] = index+1;
+                                return off; 
+                            }),
+                        })
+                                    });
+            }
+                    }
+    })
+    </script>
+            <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	                                    ym(57237952, "init", {
+                    clickmap:true,
+                    trackLinks:true,
+                    webvisor:true
+                });
+                    	</script>
+<noscript>
+    <div>
+                <img src="https://mc.yandex.ru/watch/57237952" style="position:absolute; left:-9999px;" alt="" />
+            </div>
+</noscript>
+<!-- /Yandex.Metrika counter -->        <!--Including FireBase-->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-messaging.js"></script> -->
+    <!-- <script src="/device.js"></script> -->
+    <!-- <script src="/app.js"></script> -->
+
+</body>
+</html>

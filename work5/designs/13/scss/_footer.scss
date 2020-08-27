@@ -1,0 +1,40 @@
+//footer
+
+.footer {
+  &-item {
+    background: #272727;
+    padding: 45px 0;
+    color: $color-white;
+    a, button, input {
+      color: $color-white;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .copyright {
+      margin-top: 10px;
+    }
+    .container {
+      @include flexbox;
+      @include justify-content(space-between);
+    }
+    &__column {
+      width: calc(33.3% - 30px);
+    }
+  }
+  &-info {
+    padding: 45px 0;
+    background: $color-decor;
+      .text {
+        margin-bottom: 0;
+        p {
+          line-height: 20px;
+        }
+      }
+      h6 {
+        margin-bottom: 20px;
+      }
+  }
+}
