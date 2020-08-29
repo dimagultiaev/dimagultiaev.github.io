@@ -101,6 +101,37 @@
                     <div v-for="(item, index) in elements" :key="item.id" class="column-item catalog-item">
                         <div class="catalog-item__block">
                             <div class="catalog-item__logo">
+                                <img src="logo/halva.png" alt="">
+                            </div>
+                            <div class="stars" v-if="item.rating">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="catalog-item__block">
+                            <ul class="catalog-item__list">
+                                <li>
+                                    <div class="catalog-item__list_icon">
+                                        <img src="designs/13/image/icons/card.svg" alt="">
+                                    </div>
+                                    <p>До <b>350000</b> руб.</p>
+                                </li>
+                                <li>
+                                    <div class="catalog-item__list_icon">
+                                        <img src="designs/13/image/icons/percent.svg" alt="">
+                                    </div>
+                                    <p>Ставка <b>от 0%</b> в год</p>
+                                </li>
+                            </ul>
+                            <div class="catalog-item__count">Возраст от <b>18</b> до <b>90</b> лет</div>
+                            <a target="_blank" href="https://readserv.com/go/f5ae11f79401426ba0eee42428aa9b3e365b64d1eb0a0b0b/" class="btn">Получить карту</a>
+                        </div>
+                    </div>
+                    <div v-for="(item, index) in elements" :key="item.id" class="column-item catalog-item">
+                        <div class="catalog-item__block">
+                            <div class="catalog-item__logo">
                                 <img src="logo/alfa.png" alt="">
                             </div>
                             <div class="stars" v-if="item.rating">
