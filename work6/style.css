@@ -120,6 +120,9 @@ footer {
     justify-content: space-between;
     align-items:center
 }
+.logoinfo-mob {
+    display: none;
+}
 .banklogo {
     width: 10%;
 }
@@ -133,6 +136,7 @@ footer {
     font-size: 18px;
 }
 .info-mob p {
+    display: none;
     color: black;
     font-family: Open Sans;
     font-weight: 700;
@@ -162,6 +166,12 @@ footer {
     }
 }
 @media screen and (min-width: 480px) and (max-width: 749px) {
+    .info-mob p{
+        display: block;
+    }
+    .logoinfo-mob {
+        display: block;
+    }
     .wrap {
         width: 430px;
     }
@@ -205,6 +215,12 @@ footer {
     }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
+    .info-mob p{
+        display: block;
+    }
+    .logoinfo-mob {
+        display: block;
+    }
     .wrap {
         width: 300px;
     }
