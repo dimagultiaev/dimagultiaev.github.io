@@ -1,0 +1,54 @@
+//footer
+
+.footer {
+  background: $color-decor;
+  color: $color-white;
+  padding: 45px 0;
+  a, button {
+    color: $color-white;
+  }
+  .container {
+    @include flexbox;
+    @include flex-direction(row-reverse);
+  }
+  &-item {
+    width: 400px;
+    padding-right: 80px;
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .copyright {
+      margin-top: 10px;
+    }
+    .contacts {
+      margin-top: 60px;
+      p {
+        line-height: 1.2;
+      }
+    }
+  }
+  &-info {
+    width: calc(100% - 400px);
+    margin-bottom: 45px;
+    &__row {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid $color-white;
+      &:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+      .text {
+        margin-bottom: 0;
+        p {
+          line-height: 20px;
+        }
+      }
+      h6 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
