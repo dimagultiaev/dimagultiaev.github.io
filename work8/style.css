@@ -30,8 +30,8 @@ body{
 .utp ul {
     list-style-image: url(image/tick_icon.png);
     list-style-type: none;
-    margin-right: 30px;
-    margin-left: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 75px;
     font-weight: 500;
     line-height: 35px;
