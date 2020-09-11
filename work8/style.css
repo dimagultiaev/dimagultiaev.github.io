@@ -5,6 +5,12 @@
 body{
     background-color:rgb(230, 230, 230);
 }
+button:focus {
+    outline: none;
+}
+input:focus {
+    outline: none;
+}
 .main-wrap {
     position: relative;
     width: 100%;
@@ -101,13 +107,56 @@ body{
 }
 .timer {
     margin-top: 75px;
+    background-color: #f0f0f0;
+    padding-bottom: 40px;
+    border-top: 1px dashed #777777;
+    border-bottom: 1px dashed #777777;
 }
 .timer p {
-    /* background-color: rgb(214, 214, 214); */
+    padding-top: 40px;
     text-align:center;
     color:black;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 24px;
     font-family: Montserrat;
     margin-bottom: 35px;
+}
+.form {
+    margin-top: 75px;
+}
+form input {
+    padding: 0px 5%;
+    color: #777777;
+    border: 0.5px solid #777777;
+    background: #f0f0f0;
+    border-radius: 20px;
+    font-size: 18px;
+    height: 70px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 70%;
+}
+form input:last-child {
+    margin-bottom: 0px;
+}
+form button {
+    cursor: pointer;
+    background: #f5ca16;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: Montserrat;
+    margin-bottom: 35px;
+    border: none;
+    border-radius: 20px;
+    padding: 25px 0px;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    box-shadow: 0px 7px #d8a500;
+    transition: .2s;
+}
+form button:hover {
+    box-shadow: none;
 }
